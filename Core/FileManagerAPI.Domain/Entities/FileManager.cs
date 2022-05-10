@@ -14,7 +14,7 @@ namespace FileManagerAPI.Domain.Entities
         public string Icon { get; set; }
         public bool IsDirectory { get; set; }
         public bool? Expanded { get; set; }
-
+        public string Name { get; set; }
     }
 }
 
