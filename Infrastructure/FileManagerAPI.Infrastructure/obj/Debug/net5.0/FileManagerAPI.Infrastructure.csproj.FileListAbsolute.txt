@@ -1,0 +1,17 @@
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Infrastructure.deps.json
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Infrastructure.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\ref\FileManagerAPI.Infrastructure.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Infrastructure.pdb
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Application.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Domain.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Application.pdb
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\bin\Debug\net5.0\FileManagerAPI.Domain.pdb
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.csproj.AssemblyReference.cache
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.AssemblyInfoInputs.cache
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.AssemblyInfo.cs
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.csproj.CoreCompileInputs.cache
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.csproj.CopyComplete
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\ref\FileManagerAPI.Infrastructure.dll
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Infrastructure\obj\Debug\net5.0\FileManagerAPI.Infrastructure.pdb
