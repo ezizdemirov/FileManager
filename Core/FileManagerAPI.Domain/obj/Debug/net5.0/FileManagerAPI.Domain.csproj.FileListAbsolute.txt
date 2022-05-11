@@ -9,3 +9,4 @@ D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Debug\net5.0\FileManag
 D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Debug\net5.0\FileManagerAPI.Domain.dll
 D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Debug\net5.0\ref\FileManagerAPI.Domain.dll
 D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Debug\net5.0\FileManagerAPI.Domain.pdb
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Debug\net5.0\FileManagerAPI.Domain.csproj.AssemblyReference.cache
