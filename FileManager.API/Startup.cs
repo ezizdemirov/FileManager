@@ -57,7 +57,11 @@ namespace FileManager.API
             app.UseRouting();
             app.UseCors("AllowCORS");
             app.UseAuthorization();
-
+            app.UseCors(x => x
+                .SetIsOriginAllowed(origin => true)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
