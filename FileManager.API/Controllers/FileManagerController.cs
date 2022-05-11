@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using FileManagerAPI.Application.Repositories.FileManagerRepository;
-using FileManagerAPI.Application.Repositories.MusteriRepository;
+using FileManagerAPI.Application.ViewModels;
 using FileManager = FileManagerAPI.Domain.Entities.FileManager;
 
 namespace FileManager.API.Controllers
@@ -15,24 +15,18 @@ namespace FileManager.API.Controllers
     [ApiController]
     public class FileManagerController : ControllerBase
     {
-        readonly private IMusteriReadRepository _musteriReadRepository;
+        
         readonly private IFileManagerReadRepository _fileManagerReadRepository;
         readonly private IFileManagerWriteRepository _fileManagerWriteRepository;
 
-        public FileManagerController(IMusteriReadRepository musteriReadRepository, IFileManagerReadRepository fileManagerReadRepository, IFileManagerWriteRepository fileManagerWriteRepository)
+        public FileManagerController( IFileManagerReadRepository fileManagerReadRepository, IFileManagerWriteRepository fileManagerWriteRepository)
         {
-            _musteriReadRepository = musteriReadRepository;
+           
             _fileManagerReadRepository = fileManagerReadRepository;
             _fileManagerWriteRepository = fileManagerWriteRepository;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
    
-          return Ok ( _musteriReadRepository.GetAll(false));
-
-        }
         [Route("GetFileManager")]
         [HttpGet]
         public async Task<IActionResult> GetFileManager()
@@ -96,24 +90,53 @@ namespace FileManager.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(IFormFile file)
+        [Route("UploadFile")]
+    //    public async Task<IActionResult> SavePost([FromForm] PostViewModel viewModel)
+        public async Task<IActionResult> UploadFile([FromForm] UploadViewModel model)
         {
-            if (file.Length <= 0)
-                return BadRequest("Empty file");
-
-           var originalFileName = Path.GetFileName(file.FileName);
-
-            //Create a unique file path
-            var uniqueFileName = Path.GetRandomFileName();
-            var uniqueFilePath = Path.Combine(@"C:\temp\", uniqueFileName);
-
-            //Save the file to disk
-            using (var stream = System.IO.File.Create(uniqueFilePath))
+           
+            try
             {
-                await file.CopyToAsync(stream);
-            }
+                var file = Request.Form.Files[0];
+                var folderName = Path.Combine("Resources", "Files");
+                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                if (file.Length > 0)
+                {
+                    var fileName = model.File.FileName;
+                    var fullPath = Path.Combine(pathToSave, fileName);
+                    var dbPath = Path.Combine(folderName, fileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
 
-            return Ok($"Saved file {originalFileName} with size {file.Length / 1024m:#.00} KB using unique name {uniqueFileName}");
+                    var data = await _fileManagerReadRepository.GetByIdAsync(model.Id, true);
+                    data.Name = model.File.FileName;
+                    data.Expanded = true;
+                    data.IsDirectory = false;
+                    data.Icon = "file";
+                    data.Id = 0;
+                    data.ParentId = model.Id;
+
+
+                    
+                   await  _fileManagerWriteRepository.AddAsync(data);
+                  
+                   // return Ok(new { dbPath });
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
+            await _fileManagerWriteRepository.SaveAsync();
+            return Ok();
+
+            //return Ok();
         }
     }
 }

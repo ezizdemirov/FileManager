@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Infrastructure\FileManagerAPI.Persistence\FileManagerAPI.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\Files\" />
+  </ItemGroup>
+
 </Project>

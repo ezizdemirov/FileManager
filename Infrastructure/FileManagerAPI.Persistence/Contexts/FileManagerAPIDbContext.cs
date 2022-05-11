@@ -15,8 +15,7 @@ namespace FileManagerAPI.Persistence.Contexts
         }
 
         public DbSet<FileManager> FileManager { get; set; }
-        public DbSet<Musteri> Musteri { get; set; }
-
+     
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
              var datas = ChangeTracker
