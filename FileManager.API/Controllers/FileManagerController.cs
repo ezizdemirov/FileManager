@@ -26,6 +26,7 @@ namespace FileManager.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            // ---
           return Ok ( _musteriReadRepository.GetAll(false));
 
         }
