@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FileManagerAPI.Application.Repositories.FileManagerRepository;
 using FileManagerAPI.Application.Repositories.MusteriRepository;
 
 namespace FileManager.API.Controllers
@@ -13,10 +14,13 @@ namespace FileManager.API.Controllers
     public class FileManagerController : ControllerBase
     {
         readonly private IMusteriReadRepository _musteriReadRepository;
+        readonly private IFileManagerReadRepository _fileManagerReadRepository;
        
-        public FileManagerController(IMusteriReadRepository musteriReadRepository)
+        public FileManagerController(IMusteriReadRepository musteriReadRepository, IFileManagerReadRepository fileManagerReadRepository)
         {
             _musteriReadRepository = musteriReadRepository;
+            _fileManagerReadRepository = fileManagerReadRepository;
+
         }
 
         [HttpGet]
@@ -25,13 +29,23 @@ namespace FileManager.API.Controllers
           return Ok ( _musteriReadRepository.GetAll(false));
 
         }
-        [Route("GetMusterile")]
+        [Route("GetFileManager")]
         [HttpGet]
-        public async Task<IActionResult> GetMusterile()
+        public async Task<IActionResult> GetFileManager()
         {
-            return Ok(_musteriReadRepository.GetAll(false));
+            return Ok(_fileManagerReadRepository.GetAll(false).OrderBy(x=>x.Id));
 
         }
+
+        [Route("CreateFolder")]
+        [HttpPost]
+        public async Task<IActionResult> CreateFolder()
+        {
+           // return Ok(_fileManagerReadRepository.GetAll(false).OrderBy(x => x.Id));
+           return Ok();
+
+        }
+
 
 
 

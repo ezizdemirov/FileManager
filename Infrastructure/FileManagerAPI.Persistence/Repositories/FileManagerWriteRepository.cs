@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FileManagerAPI.Application.Repositories;
+using FileManagerAPI.Application.Repositories.FileManagerRepository;
+using FileManagerAPI.Domain.Entities;
+using FileManagerAPI.Persistence.Contexts;
+
+namespace FileManagerAPI.Persistence.Repositories
+{
+  public class FileManagerWriteRepository: WriteRepository<FileManager>, IFileManagerWriteRepository 
+  {
+      public FileManagerWriteRepository(FileManagerAPIDbContext context) : base(context) 
+      {
+          
+      }
+  }
+}

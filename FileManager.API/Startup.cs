@@ -28,12 +28,16 @@ namespace FileManager.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            var corsOrigins = Configuration.GetSection("CORSOrigins").GetChildren().Select(x => x.Value).ToArray();
             services.AddControllers();
             services.AddPesistenceServices();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FileManager.API", Version = "v1" });
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowCORS", builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins(corsOrigins).AllowCredentials().Build());
             });
         }
 
@@ -51,7 +55,7 @@ namespace FileManager.API
             
 
             app.UseRouting();
-
+            app.UseCors("AllowCORS");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

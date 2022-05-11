@@ -1,4 +1,5 @@
 ﻿
+using FileManagerAPI.Application.Repositories.FileManagerRepository;
 using FileManagerAPI.Application.Repositories.MusteriRepository;
 using Microsoft.Extensions.DependencyInjection;
 using FileManagerAPI.Persistence.Contexts;
@@ -14,7 +15,8 @@ namespace FileManagerAPI.Persistence
             //   services.AddSingleton<IFileManagerService, FileManagerService>();
 
             services.AddScoped<IMusteriReadRepository, MusteriReadRepository>();
-
+            services.AddScoped<IFileManagerReadRepository, FileManagerReadRepository>();
+            services.AddScoped<IFileManagerWriteRepository, FileManagerWriteRepository>();
             services.AddDbContext<FileManagerAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
             //services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
             //services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();

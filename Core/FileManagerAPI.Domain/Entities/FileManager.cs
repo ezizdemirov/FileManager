@@ -10,7 +10,7 @@ namespace FileManagerAPI.Domain.Entities
    public class FileManager:BaseEntity
     {
         
-        public int? parentId { get; set; }
+        public int? ParentId { get; set; }
         public string Icon { get; set; }
         public bool IsDirectory { get; set; }
         public bool? Expanded { get; set; }
