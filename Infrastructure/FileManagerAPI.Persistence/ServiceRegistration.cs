@@ -17,12 +17,7 @@ namespace FileManagerAPI.Persistence
             services.AddScoped<IFileManagerReadRepository, FileManagerReadRepository>();
             services.AddScoped<IFileManagerWriteRepository, FileManagerWriteRepository>();
             services.AddDbContext<FileManagerAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
-            //services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
-            //services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
-            //services.AddScoped<IOrderReadRepository, OrderReadRepository>();
-            //services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
-            //services.AddScoped<IProductReadRepository, ProductReadRepository>();
-            //services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+        
         }
     }
 }
