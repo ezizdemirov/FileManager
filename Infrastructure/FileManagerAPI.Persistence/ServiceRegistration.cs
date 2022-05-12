@@ -11,9 +11,6 @@ namespace FileManagerAPI.Persistence
     {
         public static void AddPesistenceServices(this IServiceCollection services )
         {
-            //   services.AddSingleton<IFileManagerService, FileManagerService>();
-
-        
             services.AddScoped<IFileManagerReadRepository, FileManagerReadRepository>();
             services.AddScoped<IFileManagerWriteRepository, FileManagerWriteRepository>();
             services.AddDbContext<FileManagerAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
