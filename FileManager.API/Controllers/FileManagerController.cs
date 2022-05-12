@@ -138,5 +138,13 @@ namespace FileManager.API.Controllers
 
             //return Ok();
         }
+       [HttpGet]
+       [Route("GetFiles")]
+       public async Task<IActionResult> GetFiles(int id)
+       {
+           var files = _fileManagerReadRepository.GetWhere(x => x.ParentId == id && x.IsDirectory==false,false).ToList();
+           return Ok(files);
+       }
+
     }
 }
