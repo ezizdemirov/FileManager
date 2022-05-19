@@ -16,7 +16,8 @@ namespace FileManagerAPI.Persistence
         public FileManagerAPIDbContext CreateDbContext(string[] args)
         {
             DbContextOptionsBuilder<FileManagerAPIDbContext> dbContextOptionsBuilder = new DbContextOptionsBuilder<FileManagerAPIDbContext>();
-            dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);
+            // dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);
+            dbContextOptionsBuilder.UseSqlServer(Configuration.ConnectionString);
             return new FileManagerAPIDbContext(dbContextOptionsBuilder.Options); 
         }
     }

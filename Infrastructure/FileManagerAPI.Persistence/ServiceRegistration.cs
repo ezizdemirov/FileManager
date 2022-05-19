@@ -13,8 +13,9 @@ namespace FileManagerAPI.Persistence
         {
             services.AddScoped<IFileManagerReadRepository, FileManagerReadRepository>();
             services.AddScoped<IFileManagerWriteRepository, FileManagerWriteRepository>();
-            services.AddDbContext<FileManagerAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
-        
+            //services.AddDbContext<FileManagerAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
+            services.AddDbContext<FileManagerAPIDbContext>(options => options.UseSqlServer(Configuration.ConnectionString));
+
         }
     }
 }

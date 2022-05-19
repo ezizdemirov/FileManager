@@ -1,8 +1,3 @@
-D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.csproj.AssemblyReference.cache
-D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.AssemblyInfoInputs.cache
-D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.AssemblyInfo.cs
-D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.csproj.CoreCompileInputs.cache
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Persistence.deps.json
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Persistence.runtimeconfig.json
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Persistence.runtimeconfig.dev.json
@@ -13,6 +8,11 @@ D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\n
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Domain.dll
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Application.pdb
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\bin\Debug\net5.0\FileManagerAPI.Domain.pdb
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.csproj.AssemblyReference.cache
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.AssemblyInfoInputs.cache
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.AssemblyInfo.cs
+D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.csproj.CoreCompileInputs.cache
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.csproj.CopyComplete
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\FileManagerAPI.Persistence.dll
 D:\FileManager\FileManager\Infrastructure\FileManagerAPI.Persistence\obj\Debug\net5.0\ref\FileManagerAPI.Persistence.dll

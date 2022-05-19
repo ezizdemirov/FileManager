@@ -18,8 +18,7 @@ namespace FileManagerAPI.Persistence
                 //configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/FileManager.API"));
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../FileManager.API"));
                 configurationManager.AddJsonFile("appsettings.json");
-
-                return configurationManager.GetConnectionString("PostgreSQL");
+                return configurationManager.GetConnectionString("MsSqlServer");
             }
         }
     }
