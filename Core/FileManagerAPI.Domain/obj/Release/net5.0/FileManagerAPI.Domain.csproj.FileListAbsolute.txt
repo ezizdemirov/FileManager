@@ -1,0 +1,12 @@
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\bin\Release\net5.0\FileManagerAPI.Domain.deps.json
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\bin\Release\net5.0\FileManagerAPI.Domain.dll
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\bin\Release\net5.0\ref\FileManagerAPI.Domain.dll
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\bin\Release\net5.0\FileManagerAPI.Domain.pdb
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.csproj.AssemblyReference.cache
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.AssemblyInfoInputs.cache
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.AssemblyInfo.cs
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.csproj.CoreCompileInputs.cache
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.dll
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\ref\FileManagerAPI.Domain.dll
+D:\FileManager\FileManager\Core\FileManagerAPI.Domain\obj\Release\net5.0\FileManagerAPI.Domain.pdb

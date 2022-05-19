@@ -9,7 +9,7 @@ using FileManagerAPI.Application.Repositories.FileManagerRepository;
 using FileManagerAPI.Application.ViewModels;
 using FileManager = FileManagerAPI.Domain.Entities.FileManager;
 
-namespace FileManager.API.Controllers
+namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,9 +29,10 @@ namespace FileManager.API.Controllers
    
         [Route("GetFileManager")]
         [HttpGet]
-        public async Task<IActionResult> GetFileManager()
+        public IActionResult GetFileManager()
         {
-            return Ok(_fileManagerReadRepository.GetAll(false).OrderBy(x=>x.Id));
+            var data = _fileManagerReadRepository.GetAll(false).OrderBy(x => x.Id);
+            return Ok(data);
 
         }
 
@@ -135,12 +136,11 @@ namespace FileManager.API.Controllers
             }
             await _fileManagerWriteRepository.SaveAsync();
             return Ok();
-
-            //return Ok();
+            
         }
        [HttpGet]
        [Route("GetFiles")]
-       public async Task<IActionResult> GetFiles(int id)
+       public  IActionResult GetFiles(int id)
        {
            var files = _fileManagerReadRepository.GetWhere(x => x.ParentId == id && x.IsDirectory==false,false).ToList();
            return Ok(files);

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FileManagerAPI.Domain/1.0.0": {
+        "runtime": {
+          "FileManagerAPI.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileManagerAPI.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
