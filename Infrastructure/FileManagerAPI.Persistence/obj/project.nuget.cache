@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0jpikbI3P9YbTTUt8/vnht4dHat+w2yuQvDFUKuozDD5N2GVt4Q4RkBGTY92S85V59cYD/gOTGKluQenMXxNTw==",
+  "dgSpecHash": "Do+QBxHVn49wbv1qpF+Tgb9PdCqcGVSuIWK5lNhh6+DjAm4oxEv9KP3twc1owztW7I2CqA5X+1n7orrisUREKQ==",
   "success": true,
   "projectFilePath": "D:\\FileManager\\FileManager\\Infrastructure\\FileManagerAPI.Persistence\\FileManagerAPI.Persistence.csproj",
   "expectedPackageFiles": [
@@ -30,8 +30,6 @@
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\aziz.damirov\\.nuget\\packages\\npgsql\\5.0.0\\npgsql.5.0.0.nupkg.sha512",
-    "C:\\Users\\aziz.damirov\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.0\\npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",

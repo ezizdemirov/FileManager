@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "blYI77alTkVNZ9rY767v4mTqQXaDj6KRjmdfnaHAWhe6aZqC6rRsPRrn27XprDbM1wWIFewxH7l3gxliecYZRQ==",
+  "dgSpecHash": "9LSBuc9sV2sA3y2gI9Cybvkgq9jfLvxgCqj7vY7PEfOCtK/SLROy+HqH2cgEC4o3llJTHd9AhiJ3f7/zwIjmqA==",
   "success": true,
   "projectFilePath": "D:\\FileManager\\FileManager\\FileManager.API\\FileManager.API.csproj",
   "expectedPackageFiles": [
@@ -31,8 +31,6 @@
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\aziz.damirov\\.nuget\\packages\\npgsql\\5.0.0\\npgsql.5.0.0.nupkg.sha512",
-    "C:\\Users\\aziz.damirov\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.0\\npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\aziz.damirov\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
